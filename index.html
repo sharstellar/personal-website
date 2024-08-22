@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Shar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/jpg" href="./assets/catto.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">Welcome!</div>
+        <nav>
+            <ul id="menu"> 
+                <li><a href="#about">about me</a></li>
+                <li><a href="#projects">project</a></li>
+                <li><a href="#clubs">clubs</a></li>
+                <li><a href="#contact" class="button">contact</a></li>
+            </ul>
+            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="hero container">
+            <div class="hero-text">
+                <h1>Hi, I'm Stellar</h1>
+                <p>
+                    I'm a current UBC student in the B+MM dual degree program! I'm pursing a specialization in <span class="education">combined computer science and statistics</span> in the faculty of science, alongside a <span class="education">master of management from Sauder</span>.
+                    <span id="flex-text">I'm excited to share my passion for technology with you, and I hope you find inspiration in the projects and experiences showcased here.</span>
+                 </p>
+                <div class="call-to-action">
+                    <a href="/assets/resume.pdf" target="_blank"class="button">
+                        click here for my resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-pic">
+                <img src="./assets/hero_image.jpg" alt="catto" width="100%">
+            </div>
+            <img class="arrow" src="./assets/arrow.png" onclick="location.href='#projects'">
+        </section>
+        <section id="projects" class="projects container">
+            <h2>
+                Projects
+                <small>Here are some of my projects!</small>
+            </h2>
+            <div class="holder-project"> 
+                <h3>
+                    Project Name
+                </h3>
+                <ul>
+                    <li>Tag 1</li>
+                    <li>Tag 2</li>
+                    <li>Tag 3</li>
+                </ul>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <img class="arrow" src="./assets/arrow.png" onclick="location.href='#clubs'">
+        </section>
+        <section id="clubs" class="clubs container">
+            <h2>
+                Clubs
+                <small>What I do outside of school! </small>
+            </h2> 
+            <div class="club-cards">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./assets/wics.jpg" alt="wics-img" width="100%">
+                            <!-- <figcaption>caption</figcaption> -->
+                        </div>
+                    </figure>
+                    <h4>UBC Women in Computer Science</h4>
+                    <p>UBC WiCS seeks to empower women by building connections & supporting each other.</p>
+                    <h4>Marketing/Communicatons Lead</h4>
+                </article>
+
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./assets/nwplus.jpg" alt="nwplus-img" width="100%">
+                            <!-- <figcaption>caption</figcaption> -->
+                        </div>
+                    </figure>
+                    <h4>nwPlus</h4>
+                    <p>The Canadian student community behind some of the largest hackathons in the Pacific Northwest.</p>
+                    <h4>Marketing Coordinator | HackCamp & cmd-f</h4>
+                </article>
+
+                <article>
+                    <figure>
+                        <div>
+                            <img src="./assets/ubcma.jpg" alt="ubcma-img" width="100%">
+                            <!-- <figcaption>caption</figcaption> -->
+                        </div>
+                    </figure>
+                    <h4>UBC Marketing Association</h4>
+                    <p>UBC's exclusive marketing club built on pillars: Educate, Engage and Execute. </p>
+                    <h4>Technology Director</h4>
+                </article>
+            </div>
+            <img class="arrow" src="./assets/arrow.png" onclick="location.href='#contact'">
+        </section>
+        <section id="contact" class="contact container">
+            <h2>
+                Contact
+                <small>Stalk me on my socials!</small>
+            </h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/stellar-shar-4005b219a" target="_blank">
+                    <img src="./assets/linkedin.png" alt="linkedin" width="48">
+                </a> 
+                <a href="mailto:sharstellar@gmail.com">
+                    <img src="./assets/email.png" alt="email" width="48">
+                </a> 
+                <a href="https://github.com/sharstellar" target="_blank">
+                    <img src="./assets/github.png" alt="github" width="48">
+                </a> 
+                <a href="https://open.spotify.com/user/sharstellar" target="_blank">
+                    <img src="./assets/spotify.png" alt="spotify" width="48">
+                </a> 
+                <a href="https://www.instagram.com/stellar.s/" target="_blank">
+                    <img src="./assets/instagram.png" alt="instagram" width="48">
+                </a> 
+            </div>
+        </section>
+        <section class="carousel">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./assets/img1.PNG" width="128">
+                    <img src="./assets/img2.PNG" width="128">
+                    <img src="./assets/img3.PNG" width="128">
+                    <img src="./assets/img4.PNG" width="128">
+                    <img src="./assets/img5.PNG" width="128">
+                    <img src="./assets/img6.PNG" width="128">
+                    <img src="./assets/img7.PNG" width="128">
+                    <img src="./assets/img8.PNG" width="128">
+                    <img src="./assets/img9.PNG" width="128">
+                    <img src="./assets/img10.PNG" width="128">
+                    
+
+                    <img src="./assets/img1.PNG" width="128">
+                    <img src="./assets/img2.PNG" width="128">
+                    <img src="./assets/img3.PNG" width="128">
+                    <img src="./assets/img4.PNG" width="128">
+                    <img src="./assets/img5.PNG" width="128">
+                    <img src="./assets/img6.PNG" width="128">
+                    <img src="./assets/img7.PNG" width="128">
+                    <img src="./assets/img8.PNG" width="128">
+                    <img src="./assets/img9.PNG" width="128">
+                    <img src="./assets/img10.PNG" width="128">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &#169; 2024 Stellar Shar. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
