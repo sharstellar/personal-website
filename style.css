@@ -54,7 +54,6 @@ header {
                     display: inline-block;
                     padding: 10px 20px;
                     &:hover {
-                        /* background: #f1f1f1; */
                         border-radius: 10px;
                         text-decoration: none;
                     }
@@ -140,12 +139,12 @@ p {
     }
     .hero-text {
         flex: 1;
-        padding: 30px;
+        padding: 90px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .education {
-            color: black;
+        .bold {
+            color: bold;
             font-weight: 600;
         }
         #flex-text {
@@ -165,7 +164,6 @@ p {
     }
     .hero-pic {
         flex: 1;
-        /* background: pink; */
         border-radius: 30px;
         padding: 0px 30px;
         display: flex;
@@ -291,34 +289,80 @@ h3 {
 
 .clubs {
     position: relative;
+  
     .club-cards {
-        display: flex;
-        gap: 30px;
-        @media(max-width: 1024px) {
-            flex-direction: column;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+  
+      @media(max-width: 1024px) {
+        flex-direction: column; 
+      }
+  
+      article {
+        flex: 1 1 calc(33.333% - 30px); 
+        padding: 30px;
+        padding-top: 0; 
+        position: relative; 
+        overflow: hidden; 
+        transition: transform 0.3s ease; 
+  
+        h4 {
+          margin-top: 20px;
+          margin-bottom: 10px;
         }
-        article {
-            flex: 1;
-            padding: 30px;
-            padding-top: 0px;
-            h4 {
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-            figure {
-                border-radius: 15px;
-            }
+  
+        figure {
+          border-radius: 15px;
         }
+  
+        &:hover {
+          transform: scale(1.05); 
+        }
+  
+        .club-content {
+          padding: 1em;
+        }
+  
+        .club-details {
+          display: none;
+          opacity: 0;
+          max-height: 0;
+          transition: opacity 0.3s ease, max-height 0.3s ease;
+          padding: 0;
+        }
+
+        &:hover .club-summary {
+            display: none;
+          }
+  
+        &:hover .club-details {
+          display: block;
+          opacity: 1;
+          max-height: 300px; 
+          padding-top: 10px;
+          padding-left: 0px; 
+          padding-right: 0px; 
+          padding-bottom: 0px; 
+          p, li {
+            font-size: 14px;
+          }
+        }
+      }
     }
+  
     .arrow {
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        width: 40px;
-        height: 40px;
-        box-shadow: none;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      width: 40px;
+      height: 40px;
+      box-shadow: none;
+      cursor: pointer; 
     }
 }
+  
+
 
 .contact {
     .social-links {
